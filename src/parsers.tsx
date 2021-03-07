@@ -8,14 +8,16 @@ export function parseMedia(mediaEntities: MediaEntity[] | null | undefined, comp
 
   if (Array.isArray(mediaEntities)) {
     mediaEntities.forEach((mediaEntity) => {
-      const { indices, media_url: mediaUrl, url, sizes } = mediaEntity;
-      const [start, end] = indices;
+      const { indices } = mediaEntity;
+      if (Array.isArray(indices) && indices.length === 2) {
+        const [start, end] = indices;
 
-      newComponentArray = [
-        ...componentArray.slice(0, start),
-        ...new Array(end - start - 2).fill(null),
-        ...componentArray.slice(end + 1, componentArray.length + 1),
-      ];
+        newComponentArray = [
+          ...newComponentArray.slice(0, start),
+          ...new Array(end - start - 2).fill(null),
+          ...newComponentArray.slice(end + 1, newComponentArray.length + 1),
+        ];
+      }
     });
   }
 
