@@ -1,6 +1,6 @@
 {
-  "name": "react-tweet-parser",
-  "description": "Parse Twitter API tweet text into React components",
+  "name": "react-tweet-parse",
+  "description": "Parse Twitter API tweet JSON into clean React elements",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "version": "1.0.0",
@@ -14,10 +14,10 @@
   "author": "Miles Crighton",
   "repository": {
     "type": "git",
-    "url": "https://github.com/miles-crighton/react-tweet-parser"
+    "url": "https://github.com/miles-crighton/react-tweet-parse"
   },
   "bugs": {
-    "url": "https://github.com/miles-crighton/react-tweet-parser/issues"
+    "url": "https://github.com/miles-crighton/react-tweet-parse/issues"
   },
   "scripts": {
     "test": "jest --config jestconfig.json",
