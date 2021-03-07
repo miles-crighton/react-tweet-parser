@@ -12,6 +12,13 @@
     "Parser"
   ],
   "author": "Miles Crighton",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/miles-crighton/react-tweet-parser"
+  },
+  "bugs": {
+    "url": "https://github.com/miles-crighton/react-tweet-parser/issues"
+  },
   "scripts": {
     "test": "jest --config jestconfig.json",
     "build": "tsc",
