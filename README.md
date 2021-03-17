@@ -1,8 +1,6 @@
 # react-tweet-parser
 
-## Installation
-
-**Currently the library is only available via `git clone react-tweet-parser`**
+### **The library is not currently available via the npm registry, you can use the code as reference or fork it if you need.**
 
 ![React Tweet Parse](https://github.com/miles-crighton/react-tweet-parser/blob/master/readme-image.png)
 
