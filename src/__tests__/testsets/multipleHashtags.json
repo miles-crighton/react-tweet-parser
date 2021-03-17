@@ -1,0 +1,73 @@
+{
+  "text": "\"📷 by @alexepplerwilliams: Official Plant-Based Nutrition Graduate 🍎🥦🥕🌶🥑🍉🌈 #ecornell #nutritionstudies #plantbased #plantbasednutrition #plantbasedcertificate #plantbasedcourse #wholefoodplantbaseddiet https://t.co/pjLYgO2A8O\"",
+  "entities": {
+    "hashtags": [
+      {
+        "text": "ecornell",
+        "indices": [74, 83]
+      },
+      {
+        "text": "nutritionstudies",
+        "indices": [84, 101]
+      },
+      {
+        "text": "plantbased",
+        "indices": [102, 113]
+      },
+      {
+        "text": "plantbasednutrition",
+        "indices": [114, 134]
+      },
+      {
+        "text": "plantbasedcertificate",
+        "indices": [135, 157]
+      },
+      {
+        "text": "plantbasedcourse",
+        "indices": [158, 175]
+      },
+      {
+        "text": "wholefoodplantbaseddiet",
+        "indices": [176, 200]
+      }
+    ],
+    "symbols": [],
+    "user_mentions": [],
+    "urls": [],
+    "media": [
+      {
+        "id": 1371982619718647800,
+        "id_str": "1371982619718647814",
+        "indices": [201, 224],
+        "media_url": "http://pbs.twimg.com/media/EwpC7G5XAAY7UDm.jpg",
+        "media_url_https": "https://pbs.twimg.com/media/EwpC7G5XAAY7UDm.jpg",
+        "url": "https://t.co/pjLYgO2A8O",
+        "display_url": "pic.twitter.com/pjLYgO2A8O",
+        "expanded_url": "https://twitter.com/TColinCampbellF/status/1371982622780485632/photo/1",
+        "type": "photo",
+        "sizes": {
+          "thumb": {
+            "w": 150,
+            "h": 150,
+            "resize": "crop"
+          },
+          "medium": {
+            "w": 960,
+            "h": 1200,
+            "resize": "fit"
+          },
+          "small": {
+            "w": 544,
+            "h": 680,
+            "resize": "fit"
+          },
+          "large": {
+            "w": 1440,
+            "h": 1800,
+            "resize": "fit"
+          }
+        }
+      }
+    ]
+  }
+}

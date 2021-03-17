@@ -11,12 +11,11 @@ export function parseMedia(mediaEntities: MediaEntity[] | null | undefined, comp
       const { indices } = mediaEntity;
       if (Array.isArray(indices) && indices.length === 2) {
         const [start, end] = indices;
+        newComponentArray = [...componentArray.slice(0, start), ...new Array(end - start + 1).fill(null)];
 
-        newComponentArray = [
-          ...newComponentArray.slice(0, start),
-          ...new Array(end - start - 2).fill(null),
-          ...newComponentArray.slice(end + 1, newComponentArray.length + 1),
-        ];
+        if (end < newComponentArray.length - 1) {
+          [...newComponentArray, newComponentArray.slice(end + 1)];
+        }
       }
     });
   }
@@ -32,8 +31,7 @@ export function parseHashtags(hashtagEntites: HashtagEntity[] | null | undefined
       const { indices, text } = hashtag;
       const component = (
         <a href={`https://twitter.com/hashtag/${text}`} target="_blank">
-          {'#'}
-          {text}
+          {`#${text}`}
         </a>
       );
       newComponentArray = addToComponentArray(newComponentArray, component, indices);

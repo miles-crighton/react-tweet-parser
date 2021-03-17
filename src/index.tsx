@@ -1,16 +1,16 @@
 import React, { ReactElement } from 'react';
-import { Status } from 'twitter-d';
+import { Status, Entities } from 'twitter-d';
 export { Status, Entities, MediaEntity, UrlEntity, HashtagEntity, UserMentionEntity } from 'twitter-d';
 
 import consolidateComponentArray from './consolidateComponentArray';
 import { parseHashtags, parseMedia, parseUrls, parseUserMentions } from './parsers';
 
 export type Tweet = Status;
-export type ComponentArray = Array<ReactElement | string | null>;
+export type ComponentArray = Array<JSX.Element | string | null>;
 
 interface GetTweetComponentArrayArgs {
   text?: string;
-  entities?: Status['entities'];
+  entities?: Entities;
   tweet?: Status;
 }
 
@@ -29,7 +29,19 @@ export function createTweetComponent({ text, entities, tweet }: GetTweetComponen
   }
 
   // Construct final React component from componentArray
-  const finalComponent = <>{componentArray.map((x) => x)}</>;
+  const finalComponent = (
+    <>
+      {componentArray.map((x, idx) => {
+        if (typeof x !== 'string' && x !== null) {
+          return <x.type key={idx} />;
+        } else {
+          return x;
+        }
+        // React.cloneElement(x, )
+        // if (x && typeof x !== 'string') x.key = idx;
+      })}
+    </>
+  );
 
   return finalComponent;
 }

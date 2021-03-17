@@ -19,7 +19,8 @@
     "allowSyntheticDefaultImports": true,
     "suppressImplicitAnyIndexErrors": true,
     "noUnusedLocals": true,
-    "skipLibCheck": true
+    "skipLibCheck": true,
+    "resolveJsonModule": true
   },
   "exclude": ["node_modules", "lib", "scripts", "acceptance-tests", "webpack", "jest", "src/setupTests.ts"]
 }

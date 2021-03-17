@@ -21,6 +21,8 @@ export default function consolidateComponentArray(componentArray: ComponentArray
       continue;
     }
 
+    // console.log(componentArray);
+
     // Handle whether we find a string or a component in the array
     if (typeof componentArray[i] === 'string') {
       if (spanBeginIdx === null) {

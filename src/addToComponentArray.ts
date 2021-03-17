@@ -18,11 +18,13 @@ export default function addToComponentArray(
     const [start, end] = indices;
     newComponentArray = [
       ...componentArray.slice(0, start),
-      component,
-      ...new Array(end - start + 1).fill(null),
       ' ', // Include a trailing space after component
-      ...componentArray.slice(end + 1, componentArray.length + 1),
+      component,
+      ...new Array(end - start - 1).fill(null),
     ];
+    if (end < componentArray.length) {
+      [...newComponentArray, componentArray.slice(end + 1)];
+    }
   }
   return newComponentArray;
 }
