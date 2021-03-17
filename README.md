@@ -1,6 +1,4 @@
-# react-tweet-parse
-
-## **Project has been sunsetted, use the code as reference if needed**
+# **Project has been sunsetted, use the code as reference if needed**
 
 ![React Tweet Parse](https://github.com/miles-crighton/react-tweet-parse/blob/master/readme-image.png)
 
