@@ -1,6 +1,10 @@
 # react-tweet-parser
 
-![React Tweet Parse](https://github.com/miles-crighton/react-tweet-parse/blob/master/readme-image.png)
+## Installation
+
+**Currently the library is only available via `git clone react-tweet-parser`**
+
+![React Tweet Parse](https://github.com/miles-crighton/react-tweet-parser/blob/master/readme-image.png)
 
 **What's the problem?**
 
@@ -57,10 +61,6 @@ createTweetComponentArray({ tweet: fetchedTweet });
 This function takes the same arguments as `createTweetComponent` but returns an array of JSX Elements.
 
 With access to each JSX element this allows manipulation of each element's props and can also allow for filtering of required components.
-
-## Installation
-
-Currently the library is only available via `git clone react-tweet-parser`
 
 ## Types
 
