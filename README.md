@@ -1,5 +1,7 @@
 # react-tweet-parse
 
+## **Project has been sunsetted, use the code as reference if needed**
+
 ![React Tweet Parse](https://github.com/miles-crighton/react-tweet-parse/blob/master/readme-image.png)
 
 **What's the problem?**
@@ -58,17 +60,17 @@ This function takes the same arguments as `createTweetComponent` but returns an 
 
 With access to each JSX element this allows manipulation of each element's props and can also allow for filtering of required components.
 
-## Installation
+## ~~Installation~~
 
-Using your package manager of choice:
+~~Using your package manager of choice:~~
 
-**NPM ⚙️**
+~~**NPM ⚙️**~~
 
-`npm i react-tweet-parse`
+~~`npm i react-tweet-parse`~~
 
-**Yarn 🐈**
+~~**Yarn 🐈**~~
 
-`yarn add react-tweet-parse`
+~~`yarn add react-tweet-parse`~~
 
 ## Types
 
