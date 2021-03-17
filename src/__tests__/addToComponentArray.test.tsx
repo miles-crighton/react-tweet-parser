@@ -5,7 +5,7 @@ import multipleHashtagsSet from './testsets/multipleHashtags.json';
 
 test('addToComponentArray', () => {
   const component = <div></div>;
-  expect(addToComponentArray(['1', '2', '3'], component, [0, 1])).toStrictEqual([<div />, null, ' ', '3']);
+  expect(addToComponentArray(['1', '2', '3'], component, [0, 1])).toStrictEqual([' ', <div />]);
 });
 
 test('general', () => {

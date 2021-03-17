@@ -3,7 +3,7 @@
   "description": "Parse Twitter API tweet JSON into clean React elements",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
-  "version": "1.0.1",
+  "version": "1.0.15",
   "license": "MIT",
   "keywords": [
     "Twitter",

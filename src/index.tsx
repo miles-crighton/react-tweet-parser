@@ -33,12 +33,10 @@ export function createTweetComponent({ text, entities, tweet }: GetTweetComponen
     <>
       {componentArray.map((x, idx) => {
         if (typeof x !== 'string' && x !== null) {
-          return <x.type key={idx} />;
+          return React.cloneElement(x, { key: idx });
         } else {
           return x;
         }
-        // React.cloneElement(x, )
-        // if (x && typeof x !== 'string') x.key = idx;
       })}
     </>
   );
