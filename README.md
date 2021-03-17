@@ -1,4 +1,4 @@
-# **Project has been sunsetted, use the code as reference if needed**
+# react-tweet-parser
 
 ![React Tweet Parse](https://github.com/miles-crighton/react-tweet-parse/blob/master/readme-image.png)
 
@@ -16,7 +16,7 @@ Simply pass a Tweet into `createTweetComponent` and it'll return a component con
 
 ```tsx
 // JSX Component Example
-import { createTweetComponent } from 'react-tweet-parse';
+import { createTweetComponent } from 'react-tweet-parser';
 
 function TweetTile() {
   // ...
@@ -32,7 +32,7 @@ function TweetTile() {
 `createTweetComponent` expects either a full tweet object or a tweet's text and entities so that each entity can be parsed.
 
 ```ts
-import { createTweetComponent } from 'react-tweet-parse';
+import { createTweetComponent } from 'react-tweet-parser';
 
 // Either pass a tweet object containing both full_text and entities:
 createTweetComponent({ tweet: fetchedTweet });
@@ -50,7 +50,7 @@ Each link will have its href set to the entities's corresponding url. For exampl
 If you need the individual components to add additional props instead use:
 
 ```ts
-import { createTweetComponentArray } from 'react-tweet-parse';
+import { createTweetComponentArray } from 'react-tweet-parser';
 createTweetComponentArray({ tweet: fetchedTweet });
 ```
 
@@ -58,24 +58,16 @@ This function takes the same arguments as `createTweetComponent` but returns an 
 
 With access to each JSX element this allows manipulation of each element's props and can also allow for filtering of required components.
 
-## ~~Installation~~
+## Installation
 
-~~Using your package manager of choice:~~
-
-~~**NPM ⚙️**~~
-
-~~`npm i react-tweet-parse`~~
-
-~~**Yarn 🐈**~~
-
-~~`yarn add react-tweet-parse`~~
+Currently the library is only available via `git clone react-tweet-parser`
 
 ## Types
 
 You can also import tweet related types for convenience:
 
 ```ts
-import type Tweet from 'react-tweet-parse';
+import type Tweet from 'react-tweet-parser';
 ```
 
 `Tweet`: A status response from Twitter's API
